@@ -1,0 +1,22 @@
+CREATE DATABASE booking_system;
+CREATE TABLE bookings (
+    booking_id UUID PRIMARY KEY,
+    customer_id UUID,
+    customer_name VARCHAR(255),
+    booking_type VARCHAR(100),
+    booking_date DATE,
+    status VARCHAR(50),
+    class_type VARCHAR(100),
+    instructor VARCHAR(255),
+    time_slot TIME,
+    duration_mins INT,
+    price DECIMAL(10,2),
+    facility VARCHAR(255),
+    theme VARCHAR(100),
+    subscription_type VARCHAR(100),
+    service_name VARCHAR(255),
+    service_type VARCHAR(100),
+    customer_email VARCHAR(255) UNIQUE,
+    customer_phone VARCHAR(20) UNIQUE
+);
+
